@@ -1,20 +1,14 @@
-import { Button, ButtonProps } from "@mui/material";
+import type { Meta, StoryObj } from "@storybook/react";
+import Default from "./Button.component";
 
-export const Default = (
-  props: ButtonProps,
-  { globals: { mode } }: { globals: any }
-) => {
-  return <Button {...props} />;
+export const Basic: StoryObj = {
+  args: {
+    variant: "contained",
+    children: "Button",
+  },
 };
 
-Default.args = {
-  children: "Button",
-  variant: "contained",
-};
-
-export const Context = (props: ButtonProps, context: any) => {
-  console.log(context);
-  return <Button {...props} />;
-};
-
-export default { title: "Components/Button", component: Default };
+export default {
+  title: "Components/Button",
+  component: Default,
+} as Meta;

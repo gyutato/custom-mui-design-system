@@ -21,22 +21,6 @@ const preview: Preview = {
         dynamicTitle: true,
       },
     },
-    test: {
-      description: "Mode for preview area",
-      defaultValue: "one",
-      toolbar: {
-        // The label to show for this toolbar item
-        title: "Mode",
-        icon: "starhollow",
-        // Array of plain string values or MenuItem shape (see below)
-        items: [
-          { value: "one", icon: "starhollow", title: "one" },
-          { value: "two", icon: "star", title: "two" },
-        ],
-        // Change title based on selected value
-        dynamicTitle: true,
-      },
-    },
   },
 
   parameters: {
