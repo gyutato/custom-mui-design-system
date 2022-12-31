@@ -3,7 +3,7 @@ import { Button, ButtonProps } from "@mui/material";
 
 type OmitButtonProps = Omit<
   ButtonProps,
-  "disableFocusRipple" | "disableRipple"
+  "disableFocusRipple" | "disableRipple" | "onFocusVisible"
 >;
 
 export const Default = (props: OmitButtonProps) => <Button {...props} />;

@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 import previewDecorators from "./preview-decorators";
+import DocsTemplate from "../src/stories/assets/DocsTemplate.mdx";
 
 const preview: Preview = {
   decorators: previewDecorators,
@@ -24,6 +25,9 @@ const preview: Preview = {
   },
 
   parameters: {
+    docs: {
+      page: DocsTemplate,
+    },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {

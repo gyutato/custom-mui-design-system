@@ -1,0 +1,28 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import Default from "./Button.component";
+import * as ButtonStories from "./Button.stories";
+
+{/* Meta */}
+{/* <Meta of={ButtonStories} /> */}
+
+## Button
+
+#### Buttons allow users to take actions, and make choices, with a single tap.
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+<Canvas of={ButtonStories.Basic} />
+<Controls />
+
+## [Usage](#usage)
+
+- Buttons may contain icon, on the left or the right side
+- Use 8 px spacing between buttons
+- Replace text with a loader if action is submitted, but still processing
+- Button width is set by it’s content, avoid changing it width
+- Use only one primary button, and any remaining calls to action should be represented as lower emphasis buttons

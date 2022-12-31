@@ -12,6 +12,25 @@ export const Basic: StoryObj = {
 export default {
   title: "Components/Button",
   component: Default,
+  tags: ["autodocs"],
+  parameters: {
+    docs: {
+      controls: {
+        include: [
+          "variant",
+          "children",
+          "color",
+          "sx",
+          "fullWidth",
+          "startIcon",
+          "endIcon",
+          "size",
+          "href",
+          "ref",
+        ],
+      },
+    },
+  },
   argTypes: {
     children: {
       control: { type: "radio" },
